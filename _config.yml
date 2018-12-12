@@ -13,6 +13,19 @@ auto: false
 paginate: 8
 paginate_path: "page:num"
 
+# 评论系统
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: bc39234306e73deb3eac                            #生成的clientID
+  clientSecret: fe1427cff3fd3aff5b8446c424c1f6ea89625e59    #生成的clientSecret
+  repo: luying310.github.io    #仓库名称
+  owner: luying310    #github用户名
+  admin: luying310
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+
 kramdown:
   auto_ids: true,
   footnote_nr: 1
