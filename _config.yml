@@ -1,19 +1,51 @@
-permalink: /blog/:year/:month/:title.html 
-include: ['.htaccess']
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
-markdown: kramdown
-highlights: pygments
-url: 
-cdn_url: 7u2t01.com1.z0.glb.clouddn.com
-lsi: false
-safe: true
-timezone: Asia/Shanghai
-auto: false 
+# Site settings
+title: LY Blog
+SEOTitle: luying的博客 
+header-img: img/post-bg-desk.jpg
+email: luying1324@gmail.com
+description: "Every failure is leading towards success."
+keyword: "LY, luying310, luying的博客"
+url: "http://qiubaiying.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
 
-paginate: 8
-paginate_path: "page:num"
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Goals determine what you going to be!"
+sidebar-avatar: /img/avatar-g.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
 
 # 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: qiubaiying
+
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
@@ -23,28 +55,15 @@ gitalk:
   owner: luying310    #github用户名
   admin: luying310
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
 
 
 
-kramdown:
-  auto_ids: true,
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
 
-JB :
-  IMAGE_PATH : http://coolshell.info/images
 
-# presonal config
-domain: http://coolshell.info
-title: luying的博客
-description: Draw my life with code
-author: luying
-email: luying1324@gmail.com
-github: luying310
-
-config:
-  js_dir:
-  img_dir:
-  css_dir:
