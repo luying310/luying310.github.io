@@ -7,13 +7,9 @@ author:     LY
 header-img: img/post-bg-kuaidi.jpg
 catalog: true
 tags:
-    - python
-	
+    - python	
     - Excel
-	
-	- pandas 
-	
-	- numpy
+
 ---
 
 # 通过Python完成数据生成和导入、清洗、分类、筛选、分类汇总、透视等最常见的操作。
