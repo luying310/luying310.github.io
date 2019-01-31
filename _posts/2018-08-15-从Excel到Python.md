@@ -2,7 +2,7 @@
 layout:     post
 title:      从excel到python笔记
 subtitle:   用python实现Excel的部分功能
-date:       2018-07-15
+date:       2018-08-15
 author:     LY
 header-img: img/post-bg-kuaidi.jpg
 catalog: true
